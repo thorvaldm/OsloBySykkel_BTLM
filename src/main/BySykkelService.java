@@ -42,7 +42,7 @@ public class BySykkelService {
                 stationsMap.put(id, station);
             }
         } catch (JSONException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Failed when parsing JSON string: error message: " + e.getMessage());
         }
         return  stationsMap;
     }
@@ -64,7 +64,7 @@ public class BySykkelService {
                 stationsNameMap.put(id, title);
             }
         } catch (JSONException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Failed when parsing JSON string: error message: " + e.getMessage());
         }
         return  stationsNameMap;
     }
