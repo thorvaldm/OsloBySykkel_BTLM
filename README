@@ -1,0 +1,10 @@
+#OsloBySykkel_BTLM
+
+##Komme i gang
+Applikasjonen er en enkel kommandolinje applikasjon
+Den benytter en ekstern jar fil java-json.jar for JSON parsing.
+For å teste/kjøre applikasjonen:
+ 1. clone prosjektet
+ 2. Kompiler med: javac -cp "home-path til java-json.jar" Main.java
+ 3. Kjør programmet med: java Main
+ 4. Alternativt: Last inn i IDE (f.eks IntelliJ), sørg for å inkludere java-json.jar, og kjør programmet inne fra IDE.
