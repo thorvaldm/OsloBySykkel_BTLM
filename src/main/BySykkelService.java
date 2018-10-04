@@ -14,7 +14,6 @@ import java.util.Set;
 public class BySykkelService {
     private static final String URL_AVAILABILITY = "https://oslobysykkel.no/api/v1/stations/availability";
     private static final String URL_STATIONS = "https://oslobysykkel.no/api/v1/stations";
-    String response = "";
     RestClient restClient;
     public BySykkelService() {
         restClient = new RestClient();
