@@ -75,8 +75,13 @@ public class BySykkelService {
         while (iterator.hasNext()) {
             Integer next = (Integer) iterator.next();
             Station station = stationMap.get(next);
-            stationMap.get(next).setTitle(stationsNameMap.get(next));
-            System.out.println("Id: " + station.getId() + " title: " + station.getTitle() + " bikes: " + station.getAvailability().getBikes() + " locks: " + station.getAvailability().getLocks() + "\n");
+            String name = stationsNameMap.get(next);
+            if (name != null) {
+                stationMap.get(next).setTitle(name);
+            } else {
+                stationMap.get(next).setTitle("Ingen navn tilgjengelig");
+            }
+            System.out.println("Stasjons-Id: " + station.getId() + " | Navn på stasjon: " + station.getTitle() + " | Antall ledige sykler: " + station.getAvailability().getBikes() + " | Antall ledige låser: " + station.getAvailability().getLocks() + "\n");
         }
     }
 }

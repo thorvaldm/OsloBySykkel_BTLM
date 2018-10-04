@@ -1,6 +1,6 @@
-#OsloBySykkel_BTLM
+# OsloBySykkel_BTLM
 
-##Komme i gang
+## Komme i gang
 Applikasjonen er en enkel kommandolinje applikasjon
 Den benytter en ekstern jar fil java-json.jar for JSON parsing.
 For å teste/kjøre applikasjonen:
@@ -8,3 +8,8 @@ For å teste/kjøre applikasjonen:
  2. Kompiler med: javac -cp "home-path til java-json.jar" Main.java
  3. Kjør programmet med: java Main
  4. Alternativt: Last inn i IDE (f.eks IntelliJ), sørg for å inkludere java-json.jar, og kjør programmet inne fra IDE.
+ 
+## Hva gjør applikasjoen
+Applikasjonen utfører kall mot OsloBySykkel api for å hente ut informasjon om alle stasjonene. Det som listes ut er:
+Stasjons-id, Navn på stasjon, Antall ledige sykler, Antall ledige låser.  
+For noen stasjoner er det ikke tilgjengelig navn, der skrives det ut at det ikke er tilgjengelig navn for denne stasjonen.
